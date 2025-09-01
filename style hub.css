@@ -1,0 +1,238 @@
+ /* Navbar styling */
+    .top-bar {
+      background: linear-gradient(to right, #f97316, #fbbf24);
+      padding: 10px;
+    }
+    .search-box {
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      padding-left: 35px;
+    }
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+    }
+    .nav-links a {
+      font-weight: 500;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+    }
+    .card-img-top{
+      height: 300px;
+    }
+    
+    /* Footer Styling */
+    footer {
+      background: #555;
+      color: #fff;
+      padding: 40px 0;
+    }
+    footer h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    footer a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 10px;
+      font-size: 20px;
+      margin-right: 15px;
+      color: #fff;
+    }
+    .btn-orange {
+      background-color: #f97316;
+      color: #fff;
+      border-radius: 20px;
+      padding: 5px 15px;
+    }
+    .btn-orange:hover {
+      background-color: #d35400;
+      color: #fff;
+    }
+    .brand-card, .collection-card, .testimonial-card {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .testimonial-card {
+      text-align: center;
+      padding: 25px;
+    }
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .s1{
+        margin-left: 10px;
+    }
+    a{
+      color: #000;
+    }
+    .style:hover{
+      color: #d35400 ;
+    }
+    .s3{
+      height: 200px;
+    }
+    .s4{
+      height:400px;
+    }
+    body{
+      overflow-x: hidden;
+    }
+    .hub{
+      border-radius:15px;
+      transition: transform 0.5s ease;
+    }
+    .hub:hover{
+      transform: scale(1.1);
+    }
+     .shoe-box {
+      position: relative;
+      overflow: hidden;            /* keeps pseudo behind rounded corners */
+      height: 360px;              /* change to needed height */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:14px;         /* rounded corners for the whole card */
+      background: transparent;
+    }
+
+    /* shared pseudo settings */
+    .shoe-box::before{
+      content: "";
+      position: absolute;
+      inset: 0;                   /* fill container */
+      left: -10%;                 /* expand so slant doesn't clip */
+      width: 120%;
+      height: 100%;
+      z-index: 1;
+      transition: transform .25s ease;
+    }
+
+    /* RIGHT-LEAN: top edge higher on the right (like your sample) */
+    .shoe-box.slant-right::before{
+      --s: 12%; /* slant amount — change to 6%..20% */
+      background: #f3c291;
+      clip-path: polygon(
+        0 var(--s),   /* left-top moved down by --s */
+        100% 0,       /* right-top */
+        100% calc(100% - var(--s)), /* right-bottom moved up by --s */
+        0 100%        /* left-bottom */
+      );
+    }
+
+    /* LEFT-LEAN: mirror (top edge higher on the left) */
+    .shoe-box.slant-left::before{
+      --s: 12%;
+      background: #e8a7b2;
+      clip-path: polygon(
+        0 0, 
+        100% var(--s),
+        100% 100%,
+        0 calc(100% - var(--s))
+      );
+    }
+
+    /* shoe image sits above the panel */
+    .shoe-box img{
+      position: relative;
+      z-index: 2;
+      max-height: 260px;  /* reduce or increase as needed */
+      width: auto;
+      transition: transform .45s ease;
+    }
+    .shoe-box:hover img { transform: scale(1.06); }
+
+    .card1:hover{
+      background-color: rgb(245, 64, 82);
+      color: white;
+    }
+    .card2:hover{
+      background-color: rgb(107, 71, 45);
+      color: white;
+    }
+    .card3:hover{
+      background-color: rgb(91, 100, 91);
+      color: white;
+    }
+    .card4:hover{
+      background-color: rgb(184, 180, 180);
+      color: white;
+    }
+    .card5:hover{
+      background-color: rgb(104, 104, 104);
+      color: white;
+    }
+    .card6:hover{
+      background-color: rgb(54, 131, 149);
+      color: white;
+    }
+    .card7:hover{
+      background-color: rgb(36, 95, 123);
+      color: white;
+    }
+    .card8:hover{
+      background-color: rgb(175, 175, 175);
+      color: white;
+    }
+    .c1{
+      transition: filter 0.3s ease;
+    }
+    .c1:hover{
+      filter:brightness(80%)
+    }
+    .card9:hover{
+      background-color:rgb(12, 73, 94);
+    }
+    .card10:hover{
+      background-color:rgb(84, 78, 78);
+    }
+    .card11:hover{
+      background-color:rgb(204, 80, 80);
+    }
+    .card12:hover{
+      background-color:rgb(145, 142, 142);
+    }
+    .card13:hover{
+      background-color:rgb(73, 71, 71);
+    }
+    .card14:hover{
+      background-color:rgb(58, 105, 110);
+    }
+    .card15:hover{
+      background-color:rgb(245, 245, 245);
+    }
+    .card16:hover{
+      background-color:rgb(146, 149, 150);
+    }
+  .blob {
+  width: 400px;
+  height: 300px;
+  background: #d6b08c;
+  border-radius: 58% 42% 37% 63%;
+}
+.a{
+  color: #000;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" a href="sign up.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <!-- Tabs -->
+    <div class="tab-title">
+      <a href="login.html"><h4 class="active" id="login-tab">Login</h4></a>
+      <h4 id="signup-tab">Signup</h4>
+    </div>
+
+    <!-- Form -->
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Enter Your Username/Email">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Enter Your Password">
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember Me?</label>
+        </div>
+        <a href="#" class="text-decoration-none">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn btn-login">Login</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="or-divider"><span>Or</span></div>
+
+    <!-- Social Login -->
+    <div class="social-login">
+      <a href="#"><i class="fab fa-google" style="color:#db4437;"></i></a>
+      <a href="#"><i class="fab fa-facebook" style="color:#1877f2;"></i></a>
+      <a href="#"><i class="fab fa-linkedin" style="color:#0a66c2;"></i></a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

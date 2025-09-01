@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background: #fff;
+    }
+    .product-img {
+      max-width: 120px;
+      margin: auto;
+      display: block;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 14px;
+    }
+    .rating {
+      color: orange;
+      font-size: 14px;
+    }
+    .btn-custom {
+      width: 100%;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+  <div class="row g-4">
+
+    <!-- Left side - Pair together -->
+    <div class="col-md-6">
+      <h6 class="mb-3">Pair together</h6>
+      <div class="product-card">
+        <img src="" class="product-img" alt="Socks">
+        <p class="mt-2 mb-1">Mens Argyle Pattern Non Elastic Socks Black - Black / 6-11</p>
+        <p class="mb-1"><span class="price">Rs. 399</span> <span class="old-price">Rs. 499</span></p>
+        <p class="mb-1">Color: Multicolor</p>
+        <p class="rating">★ 4.5 | (105)</p>
+      </div>
+    </div>
+
+    <!-- Right side - Added to Bag -->
+    <div class="col-md-6">
+      <h6 class="mb-3">Added to Bag</h6>
+      <div class="product-card">
+        <img src="" class="product-img" alt="Shoes">
+        <p class="mt-2 mb-1">Puma Super Liga OG Retro Sneaker - Men's</p>
+        <p class="mb-1"><span class="price">Rs. 1299</span> <span class="old-price">Rs. 1499</span></p>
+        <p class="mb-1">Color: White/Black</p>
+        <p class="rating">★ 4.5 | (1235)</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Buttons -->
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <button class="btn btn-bg-orange btn-custom">Proceed to Checkout</button>
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-bg-orange btn-custom">Continue to Shopping</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
