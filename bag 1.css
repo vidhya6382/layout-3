@@ -1,0 +1,34 @@
+body {
+      background: #fff;
+    }
+    .product-box {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .product-img {
+      width: 120px;
+      margin-right: 15px;
+    }
+    .product-details p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .price {
+      font-weight: 600;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 13px;
+      margin-left: 5px;
+    }
+    .rating {
+      color: orange;
+      font-size: 14px;
+    }
+    .btn{
+        background-color: orange;
+    }
+    .container{
+        display:block;
+    }
